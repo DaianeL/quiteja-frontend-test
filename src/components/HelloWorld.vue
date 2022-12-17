@@ -1,5 +1,6 @@
 <template>
   <div class="hello">
+   <v-btn small color="primary">teste</v-btn>
     <h1>Teste pratico QuiteJa</h1>
     <p>
       Para mais informações do teste, consulte o README.MD do projeto
