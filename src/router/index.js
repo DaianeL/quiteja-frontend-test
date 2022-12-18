@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import HomeView from '../views/HomeView.vue'
+import ListaDeUsuariosView from '../views/ListaDeUsuariosView.vue'
+import EditarView from '../views/EditarView.vue'
 
 Vue.use(VueRouter)
 
@@ -8,8 +9,13 @@ const routes = [
   {
     path: '/',
     name: 'home',
-    component: HomeView
+    component: ListaDeUsuariosView
   },
+  {
+    path: '/:id?',
+    name: 'edit',
+    component: EditarView
+  }
 ]
 
 const router = new VueRouter({
